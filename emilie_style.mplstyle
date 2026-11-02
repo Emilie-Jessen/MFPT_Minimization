@@ -1,0 +1,101 @@
+
+# For raster artwork, choose resolution by artwork type at export:
+#     photographic/color image: 300 dpi minimum
+#     combination image:        500 dpi minimum
+#     line art:                1000 dpi minimum
+#
+# Caveat: Check the final figure against the journal's current instructions
+# before submission, especially multi-panel layouts and image resolution.
+
+########## Figure geometry and export ##########
+figure.figsize              : 7, 5
+figure.dpi                  : 100
+figure.facecolor            : white
+figure.edgecolor            : white
+figure.constrained_layout.use : True
+figure.constrained_layout.h_pad : 0.03
+figure.constrained_layout.w_pad : 0.03
+figure.constrained_layout.hspace : 0.02
+figure.constrained_layout.wspace : 0.02
+
+savefig.format              : pdf
+savefig.dpi                 : 600
+savefig.facecolor           : white
+savefig.edgecolor           : white
+savefig.transparent         : False
+savefig.bbox                : tight
+savefig.pad_inches          : 0.015
+
+########## Fonts ##########
+# Arial is preferred where installed; DejaVu Sans is a portable fallback.
+font.family                 : sans-serif
+font.sans-serif             : Arial, Helvetica, DejaVu Sans
+font.size                   : 14
+mathtext.fontset            : dejavusans
+mathtext.default            : regular
+pdf.fonttype                : 42
+ps.fonttype                 : 42
+svg.fonttype                : none
+
+########## Axes and labels ##########
+axes.facecolor              : white
+axes.edgecolor              : black
+axes.linewidth              : 0.60
+axes.labelcolor             : black
+axes.labelsize              : 14
+axes.labelpad               : 2.0
+axes.titlesize              : 16
+axes.titleweight            : bold
+axes.titlepad               : 3.0
+axes.titlelocation          : left
+axes.grid                   : False
+axes.axisbelow              : True
+axes.spines.top             : False
+axes.spines.right           : False
+axes.unicode_minus          : False
+axes.formatter.use_mathtext : False
+axes.formatter.limits       : -3, 4
+
+########## Ticks ##########
+xtick.color                 : black
+ytick.color                 : black
+xtick.labelsize             : 12
+ytick.labelsize             : 12
+xtick.direction             : out
+ytick.direction             : out
+xtick.major.size            : 3.0
+ytick.major.size            : 3.0
+xtick.major.width           : 0.60
+ytick.major.width           : 0.60
+xtick.minor.visible         : False
+ytick.minor.visible         : False
+xtick.major.pad             : 1.5
+ytick.major.pad             : 1.5
+
+########## Lines, markers, and error bars ##########
+lines.linewidth             : 2.0
+lines.markersize            : 3.5
+lines.markeredgewidth       : 0.55
+lines.solid_capstyle        : round
+lines.solid_joinstyle       : round
+errorbar.capsize            : 2.0
+
+########## Legend ##########
+legend.frameon              : False
+legend.fontsize             : 12
+legend.title_fontsize       : 12
+legend.borderpad            : 0.15
+legend.labelspacing         : 0.20
+legend.handlelength         : 1.25
+legend.handletextpad        : 0.35
+legend.borderaxespad        : 0.25
+legend.markerscale          : 0.9
+
+########## Image and contour defaults ##########
+image.cmap                  : magma
+image.interpolation         : nearest
+image.origin                : lower
+contour.negative_linestyle  : solid
+
+########## Accessible, print-friendly color cycle ##########
+axes.prop_cycle : cycler('color', ['F8766D', 'D89000', 'A3A500', '39B600', '00BF7D', '00B0F6', '9590FF', 'E76BF3'])
